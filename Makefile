@@ -6,7 +6,7 @@
 #    By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/05 16:47:27 by tbrault           #+#    #+#              #
-#    Updated: 2019/05/20 11:22:19 by tbrault          ###   ########.fr        #
+#    Updated: 2019/06/06 14:04:31 by tbrault          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,8 @@ SRC = ./ft_memset.c \
 	  ./ft_lstadd.c \
 	  ./ft_lstiter.c \
 	  ./ft_lstmap.c \
-	  ./ft_printlist.c
+	  ./ft_printlist.c \
+	  ./get_next_line.c
 OBJ = $(SRC:.c=.o)
 HEADER = libft.h
 

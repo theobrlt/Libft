@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 12:26:22 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:12:28 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 13:38:07 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	while (src[i] != '\0')

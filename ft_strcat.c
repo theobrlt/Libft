@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 16:22:28 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:10:33 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 12:25:40 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,10 @@
 char	*ft_strcat(char *s1, const char *s2)
 {
 	int	i;
-	int	j;
 
 	i = ft_strlen(s1);
-	j = 0;
-	while (s2[j])
-	{
-		s1[i] = (char)s2[j];
-		i++;
-		j++;
-	}
+	while (*(s2))
+		s1[i++] = (char)*(s2)++;
 	s1[i] = '\0';
 	return (s1);
 }

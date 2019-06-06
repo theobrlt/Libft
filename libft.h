@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 16:34:52 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:22:15 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 14:02:53 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,5 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 void				ft_printlist(t_list *list);
+int					get_next_line(const int fd, char **line);
 #endif

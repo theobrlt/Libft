@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@42student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/13 08:52:46 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:21:31 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 11:57:13 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,24 @@
 
 int		ft_atoi(const char *str)
 {
-	int				i;
 	long long int	sign;
 	long long int	result;
 
-	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-			|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	while (*(str) == ' ' || *(str) == '\t' || *(str) == '\n'
+			|| *(str) == '\v' || *(str) == '\f' || *(str) == '\r')
+		str++;
+	if (*(str) == '-' || *(str) == '+')
 	{
-		if (str[i] == '-')
+		if (*(str) == '-')
 			sign = -1;
-		i++;
+		str++;
 	}
-	if (str[i] >= 48 && str[i] <= 57)
+	if (*(str) >= 48 && *(str) <= 57)
 	{
-		while (str[i] >= 48 && str[i] <= 57)
-			result = (result * 10) + (long long int)str[i++] - 48;
+		while (*(str) >= 48 && *(str) <= 57)
+			result = (result * 10) + (long long int)*(str)++ - 48;
 	}
 	return ((int)(result * sign));
 }

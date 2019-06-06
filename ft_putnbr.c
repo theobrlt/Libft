@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 16:42:38 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:09:09 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 12:19:32 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,9 @@ void	ft_putnbr(int n)
 	long long int	x;
 
 	x = n;
-	if (x < 0)
-	{
-		ft_putchar('-');
-		x = x * -1;
-	}
-	if (x >= 10)
-	{
-		ft_putnbr(x / 10);
-		ft_putnbr(x % 10);
-	}
-	if (x >= 0 && x <= 9)
-		ft_putchar(x + 48);
+	x < 0 ? ft_putchar('-') : x;
+	x = x < 0 ? x * -1 : x;
+	x >= 10 ? ft_putnbr(x / 10) : x;
+	x >= 10 ? ft_putnbr(x % 10) : x;
+	(x >= 0 && x <= 9) ? ft_putchar(x + 48) : x;
 }

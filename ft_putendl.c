@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/16 16:40:25 by tbrault           #+#    #+#             */
-/*   Updated: 2019/05/20 11:08:31 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/06 12:10:02 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 void	ft_putendl(char const *s)
 {
-	int	i;
-
-	i = 0;
-	while (s[i])
-		ft_putchar(s[i++]);
+	while (*(s))
+		ft_putchar(*(s)++);
 	ft_putchar('\n');
 }

@@ -6,7 +6,7 @@
 /*   By: tbrault <tbrault@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 16:34:52 by tbrault           #+#    #+#             */
-/*   Updated: 2019/06/06 14:02:53 by tbrault          ###   ########.fr       */
+/*   Updated: 2019/06/10 15:56:37 by tbrault          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,4 +84,5 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 void				ft_printlist(t_list *list);
 int					get_next_line(const int fd, char **line);
+char				*ft_strjoinfree(char const *s1, char const *s2);
 #endif
